@@ -33,7 +33,7 @@ function App() {
         const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8080';
 
         // Update your fetch call
-        const response = await fetch(`${backendUrl}/api/document/extract`, {
+        const response = await fetch(`${backendUrl}api/document/extract`, {
             method: 'POST',
             headers: {
                 'X-RapidAPI-Proxy-Secret': '1b5f2d90-ba92-11f1-a7cd-0575d93e1e61' 
